@@ -1,4 +1,4 @@
-# To jest wersja 8 z Arima
+# To jest wersja 9 z Arima
 
 import streamlit as st
 import pandas as pd
@@ -25,7 +25,7 @@ from statsmodels.tsa.arima.model import ARIMA
 set_page_config(layout="wide")
 
 # start definicji strony
-st.title('The main indicators of the global economy based on data from NYSE')
+st.title('The main global economy indicators and my own EUR/PLN D5 prediction model')
 #st.subheader('We can compare different trend estimation')
 
 # Definicje
