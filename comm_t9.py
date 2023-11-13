@@ -25,8 +25,7 @@ from statsmodels.tsa.arima.model import ARIMA
 set_page_config(layout="wide")
 
 # start definicji strony
-st.title('The main global economy indicators and my own EUR/PLN D5 prediction model')
-#st.subheader('We can compare different trend estimation')
+st.title('The main global economy indicators and my own EUR/PLN D5 prediction mode')
 
 # Definicje
 today = date.today()
@@ -282,6 +281,7 @@ if checkbox_value2:
     fig_oil1.update_layout(plot_bgcolor='white',showlegend=True,xaxis=dict(showgrid=True, gridwidth=0.5, gridcolor='Lightgrey'),
                       yaxis=dict(showgrid=True, gridwidth=0.5, gridcolor='Lightgrey'))
     fig_oil1.add_vline(x = today,line_width=1, line_dash="dash", line_color="black")
+    fig_oil1.add_annotation(x=today , y= ['Day + 5 Prediction'], text= f'Today - {today}', showarrow=False)
     st.plotly_chart(fig_oil1)
     
 with col7:
