@@ -25,7 +25,7 @@ from statsmodels.tsa.arima.model import ARIMA
 set_page_config(layout="wide")
 
 # start definicji strony
-st.title('The main global economy indicators and my own EUR/PLN D5 prediction mode')
+st.title('The main global economy indicators and my own EUR/PLN D5 LSTM prediction model')
 
 # Definicje
 today = date.today()
